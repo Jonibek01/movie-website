@@ -11,15 +11,53 @@
 
   <main>
     <div class="container mt-3">
-      <h1 class="h3 p-4 text-center">Movies</h1>
+      <h1 class="h3 p-4 text-center my-5">Movies</h1>
     </div>
 
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-6">
+          
+          <section class="col-md-4 mt-3 mb-4">
+            <form class="js-search-form" action="#" method="POST">
+              <div class="form-group">
+                <input class="form-control js-search-form__title-input" type="text" name="title" aria-label="enter title" placeholder="Avengers">
+              </div>
+              <div class="form-group">
+                <input class="form-control js-search-form__rating-input" type="number" name="rating" aria-label="choose rating" placeholder="7.5">
+              </div>
+              <div class="form-group">
+                <select class="form-control js-search-form__genre-input" name="genre" aria-label="genres">
+                  <option value="All" selected>All</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select class="form-control js-search-form__sort-input" name="sort" aria-label="sorting">
+                  <option value="rating_desc" selected>Rating (hight to low)</option>
+                  <option value="rating_asc" selected>Rating (low to hight)</option>
+                  <option value="az" selected>A-Z</option>
+                  <option value="za" selected>Z-A</option>
+                  <option value="rating_desc" selected>Rating (hight to low)</option>
+                </select>
+              </div>
+              <button class="form-control btn btn-primary" type="submit">Search</button>
+            </form>
+          </section>
 
-         
-        </div>
+          <section class="col-md-7">
+            <h4 class="h5 text-center">Search Results</h4>
+            <p class="alert alert-info">Use the form on the left to search for a movie</p>
+
+            <ul class="js-movies-box list-unstyled">
+              <li class="js-movie col-md-5">
+                <div class="card">
+                  <img src="" alt="" width="200px" height="100%">
+                  <div class="card-body">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
       </div>
     </div>
   </main>
