@@ -66,12 +66,7 @@ var findMovie = function (title, minRating, genre) {
 
             return movie.title.match(title) && movie.rating >= minRating && doesMatchCategory;
 
-        // if (genre === 'All') {
-        //     var condition = movie.title.match(title) && movie.rating >= minRating;
-        // } else {
-        //     var condition = movie.title.match(title) && movie.rating >= minRating && doesMatchCategory;
-        // }
-        // return condition;
+        
 
         // if (genre === 'All') {
         //     var condition = movie.title.match(title) && movie.rating >= minRating;
